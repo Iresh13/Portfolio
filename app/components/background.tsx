@@ -3,9 +3,15 @@
 import React, { ReactNode, useState, useEffect } from "react";
 
 const Background = ({ children }: { children: ReactNode }) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
-  const [isClient, setIsClient] = useState(false);
+  const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  });
+  const [windowSize, setWindowSize] = useState<{
+    width: number;
+    height: number;
+  }>({ width: 0, height: 0 });
+  const [isClient, setIsClient] = useState<boolean>(false);
 
   useEffect(() => {
     setIsClient(true);
