@@ -1,17 +1,34 @@
-import { useCallback } from "react";
+"use client";
+
+import { useCallback, useEffect, useState } from "react";
 
 export function useSmoothScroll() {
-  const scrollToElement = useCallback((elementId: string) => {
-    const element = document.getElementById(elementId);
+  const [isClient, setIsClient] = useState(false);
 
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-
-    setTimeout(() => {
-      window?.history.pushState(null, "", `#${elementId}`);
-    }, 10);
+  useEffect(() => {
+    setIsClient(true);
   }, []);
+
+  const scrollToElement = useCallback(
+    (elementId: string) => {
+      if (!isClient) return;
+
+      const element = document.getElementById(elementId);
+
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 20; // 20px padding
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+
+        window.history.pushState(null, "", `#${elementId}`);
+      }
+    },
+    [isClient]
+  );
 
   return scrollToElement;
 }
