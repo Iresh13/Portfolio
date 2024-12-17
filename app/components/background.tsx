@@ -50,7 +50,7 @@ const Background = ({ children }: { children: ReactNode }) => {
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-100/10 via-gray-900/50 to-gray-900 pointer-events-none transition-transform duration-300 ease-out"
         style={gradientStyle}
       />
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 pt-5">{children}</div>
     </div>
   );
 };

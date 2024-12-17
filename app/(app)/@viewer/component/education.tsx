@@ -15,19 +15,19 @@ export async function EducationView() {
       {data?.map((education: Education) => {
         return (
           <GlassmorphismCard key={education.institution}>
-            <p className="text-slate-300 text-2xl lg:text-3xl group-hover:text-slate-200 transition-colors">
+            <p className="text-slate-200 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
               {education.institution}
             </p>
 
-            <p className="text-slate-400 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
+            <p className="text-slate-300 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
               {education.degree}
             </p>
 
-            <p className="text-slate-400 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
+            <p className="text-slate-300 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
               {education.start_date} - {education.end_date}
             </p>
 
-            <p className="text-slate-400 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
+            <p className="text-slate-300 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
               {education.location}
             </p>
           </GlassmorphismCard>

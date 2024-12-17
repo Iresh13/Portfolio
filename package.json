@@ -12,6 +12,7 @@
     "@nextui-org/react": "^2.6.8",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.67.1",
+    "clsx": "^2.1.1",
     "dompurify": "^3.2.3",
     "easymde": "^2.18.0",
     "framer-motion": "^11.14.4",
