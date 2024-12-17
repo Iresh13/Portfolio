@@ -21,7 +21,7 @@ export const experience = defineType({
       type: "slug",
       name: "slug",
       options: {
-        source: "Workplace",
+        source: "workplace",
         maxLength: 280,
       },
     }),

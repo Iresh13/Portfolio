@@ -45,7 +45,7 @@ const Background = ({ children }: { children: ReactNode }) => {
     : {};
 
   return (
-    <div className="relative min-h-screen w-full bg-gray-900 overscroll-none">
+    <div className="relative min-h-screen w-full bg-slate-900 overscroll-none">
       <div
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-100/10 via-gray-900/50 to-gray-900 pointer-events-none transition-transform duration-300 ease-out"
         style={gradientStyle}

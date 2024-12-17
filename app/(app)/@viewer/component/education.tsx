@@ -14,7 +14,7 @@ export async function EducationView() {
       {data?.map((education: Education) => {
         return (
           <div
-            key={data.institution}
+            key={education.institution}
             className="border-slate-500 px-4 py-3 border-2 opacity-100 lg:opacity-55 hover:opacity-100 rounded-lg"
           >
             <p className="text-white text-lg lg:text-2xl ">
