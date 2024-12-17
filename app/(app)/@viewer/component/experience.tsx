@@ -5,7 +5,7 @@ import ChipComponent from "@/app/components/chip";
 import { GlassmorphismCard } from "./glass-morphism-card";
 import { fetchExperience } from "@/client/routes/experience.route";
 import Link from "next/link";
-import { ArrowBigUp, MoveUpRight } from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 
 export async function ExperienceView() {
   const data: Experience[] = await fetchExperience();
