@@ -36,14 +36,16 @@ export async function ExperienceView() {
                 </p>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                  {experience.technologies_used?.map((technology: any) => {
-                    return (
-                      <ChipComponent
-                        key={technology.built_with}
-                        tag={technology.built_with}
-                      />
-                    );
-                  })}
+                  {experience.technologies_used?.map(
+                    (technology: Record<string, string>) => {
+                      return (
+                        <ChipComponent
+                          key={technology.built_with}
+                          tag={technology.built_with}
+                        />
+                      );
+                    }
+                  )}
                 </div>
               </div>
             </div>
