@@ -9,7 +9,7 @@ export function useSmoothScroll() {
     }
 
     setTimeout(() => {
-      window.history.pushState(null, "", `#${elementId}`);
+      window?.history.pushState(null, "", `#${elementId}`);
     }, 10);
   }, []);
 
