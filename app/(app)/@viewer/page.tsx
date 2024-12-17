@@ -1,26 +1,12 @@
-import { fetchIntroduction } from "@/client/routes/introduction.route";
 import React from "react";
+import { About } from "./component/about";
+import { Education } from "./component/education";
 
-const Viewer = async () => {
-  const data = await fetchIntroduction();
-
+const Viewer = () => {
   return (
-    <div className="flex flex-col gap-10 overflow-y-auto p-6 md:p-10 lg:p-20">
-      <p className="text-white text-xl font-normal" id="about">
-        {data.name}
-      </p>
-
-      <p className="text-white text-xl font-normal" id="experience">
-        {data.short_description}
-      </p>
-
-      <p className="text-white text-xl font-normal" id="education">
-        {data.position}
-      </p>
-
-      <p className="text-white text-xl font-normal" id="projects">
-        {data.description_content}
-      </p>
+    <div className="flex flex-col gap-8 overflow-y-auto p-6 md:p-10 lg:p-20">
+      <About />
+      <Education />
     </div>
   );
 };

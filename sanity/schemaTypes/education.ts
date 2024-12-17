@@ -21,7 +21,7 @@ export const education = defineType({
       type: "slug",
       name: "slug",
       options: {
-        source: "Institution",
+        source: "institution",
         maxLength: 280,
       },
     }),
