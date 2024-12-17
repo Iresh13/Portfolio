@@ -10,8 +10,8 @@ const Layout = ({
 }) => {
   return (
     <Background>
-      <div className="flex lg:h-screen overflow-scroll flex-col lg:flex-row">
-        <div className="lg:max-w-[500px]">{sidebar}</div>
+      <div className="flex lg:h-screen overflow-scroll flex-col lg:flex-row gap-20 lg:gap-0">
+        <div className="md:min-w-[520px]">{sidebar}</div>
         <div className="flex flex-col gap-4">{viewer}</div>
       </div>
     </Background>

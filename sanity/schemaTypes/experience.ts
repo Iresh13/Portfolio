@@ -18,6 +18,12 @@ export const experience = defineType({
       name: "position",
     }),
     defineField({
+      type: "string",
+      description: "Url",
+      title: "Url",
+      name: "Url",
+    }),
+    defineField({
       type: "slug",
       name: "slug",
       options: {

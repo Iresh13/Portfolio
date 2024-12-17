@@ -1,24 +1,24 @@
 import { fetchIntroduction } from "@/client/routes/introduction.route";
 import { Introduction } from "@/sanity.types";
-import React, { Fragment } from "react";
+import React from "react";
 
 export async function Intro() {
   const data: Introduction = await fetchIntroduction();
 
   return (
-    <Fragment>
-      <h1 className="text-white text-lg lg:text-4xl font-normal">
-        {data?.short_description} {"  "}
-        <span className="text-lg lg:text-4xl  animate-wave inline-block">
+    <div className="group flex flex-col gap-5">
+      <h1 className="text-slate-200 md:text-slate-300 text-3xl lg:text-4xl">
+        {data?.name} {"  "}
+        <span className="text-3xl lg:text-6xl animate-wave inline-block">
           👋
         </span>
       </h1>
-      <h2 className="text-white text-lg lg:text-3xl  font-normal">
+      <h2 className="text-slate-300 text-2xl lg:text-4xl group-hover:text-slate-200 transition-colors">
         {data?.position}
       </h2>
-      <h3 className="text-white text-md lg:text-xl font-normal">
+      <h3 className="text-slate-400 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
         {data?.short_description}
       </h3>
-    </Fragment>
+    </div>
   );
 }

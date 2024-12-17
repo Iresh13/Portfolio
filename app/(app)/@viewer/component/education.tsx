@@ -3,34 +3,34 @@ import { fetchEducation } from "@/client/routes/education.route";
 import { Education } from "@/sanity.types";
 
 import React from "react";
+import { GlassmorphismCard } from "./glass-morphism-card";
 
 export async function EducationView() {
   const data = await fetchEducation();
 
   return (
-    <div className="flex flex-col gap-6 lg:gap-8" id="education">
+    <div className="flex flex-col gap-8 lg:gap-10" id="education">
       <Title title="Education" />
 
       {data?.map((education: Education) => {
         return (
-          <div
-            key={education.institution}
-            className="border-slate-500 px-4 py-3 border-2 opacity-100 lg:opacity-55 hover:opacity-100 rounded-lg"
-          >
-            <p className="text-white text-lg lg:text-2xl ">
+          <GlassmorphismCard key={education.institution}>
+            <p className="text-slate-300 text-2xl lg:text-3xl group-hover:text-slate-200 transition-colors">
               {education.institution}
             </p>
 
-            <p className="text-white text-md lg:text-xl">{education.degree}</p>
+            <p className="text-slate-400 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
+              {education.degree}
+            </p>
 
-            <p className="text-gray-300 text-md lg:text-lg italic font-light">
+            <p className="text-slate-400 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
               {education.start_date} - {education.end_date}
             </p>
 
-            <p className="text-white text-md lg:text-xl">
+            <p className="text-slate-400 text-md lg:text-lg group-hover:text-slate-200 transition-colors">
               {education.location}
             </p>
-          </div>
+          </GlassmorphismCard>
         );
       })}
     </div>

@@ -22,9 +22,9 @@ export function Navbar() {
             key={navLinks.name}
             href={navLinks.link}
             onClick={handleClick(navLinks.href)}
-            className="flex flex-row items-center gap-5 transition-all duration-300 ease-in-out hover:text-blue-400 hover:scale-110 group"
+            className="flex flex-row items-center gap-5 transition-all duration-300 ease-in-out hover:text-blue-400 hover:scale-110 group text-2xl text-slate-200 "
           >
-            <Divider className="group-hover:w-24 w-14 bg-white transition-all duration-300 group-hover:bg-blue-400" />
+            <Divider className="group-hover:w-24 w-14 bg-slate-200 transition-all duration-300 group-hover:bg-blue-400" />
             {navLinks.name}
           </a>
         );
