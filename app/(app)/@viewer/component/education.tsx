@@ -1,15 +1,17 @@
 import { Title } from "@/app/components/title";
 import { fetchEducation } from "@/client/routes/education.route";
+import { Education } from "@/sanity.types";
+
 import React from "react";
 
-export async function Education() {
+export async function EducationView() {
   const data = await fetchEducation();
 
   return (
     <div className="flex flex-col gap-6 lg:gap-8" id="education">
       <Title title="Education" />
 
-      {data?.map((education: any) => {
+      {data?.map((education: Education) => {
         return (
           <div
             key={data.institution}
