@@ -13,7 +13,8 @@ const loadConfig = (): AppConfig => {
   return AppConfigSchema.parse({
     sanityDataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "",
     sanityProjectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "",
-    sanityApiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION || "",
+    sanityApiVersion:
+      process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2024-10-03",
   });
 };
 
