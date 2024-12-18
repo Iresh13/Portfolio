@@ -1,5 +1,4 @@
 import React from "react";
-import { Title } from "@/app/components/title";
 
 import { fetchProject } from "@/client/routes/project.route";
 
