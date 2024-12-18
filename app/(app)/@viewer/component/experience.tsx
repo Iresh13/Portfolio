@@ -5,7 +5,7 @@ import ChipComponent from "@/app/components/chip";
 import { GlassmorphismCard } from "./glass-morphism-card";
 import { fetchExperience } from "@/client/routes/experience.route";
 import Link from "next/link";
-import { MoveUpRight } from "lucide-react";
+import { ArrowRight, MoveUpRight } from "lucide-react";
 
 export async function ExperienceView() {
   const data: Experience[] = await fetchExperience();
@@ -61,6 +61,16 @@ export async function ExperienceView() {
           </Link>
         );
       })}
+
+      <Link
+        href={"/iresh.pdf"}
+        className="group flex gap-4 items-center underline hover:animate-arrow"
+      >
+        <p className="text-slate-400 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
+          View Complete Resume
+        </p>
+        <ArrowRight className="group-hover:scale-125" />
+      </Link>
     </div>
   );
 }

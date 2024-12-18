@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" type="image/png" sizes="32x32" href="./iresh.png" />
       <body
         className={`${sourGrummy.className} antialiased lg:overflow-hidden`}
       >
