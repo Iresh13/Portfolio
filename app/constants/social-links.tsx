@@ -24,7 +24,7 @@ export const SocialLinks = [
   },
   {
     name: "Notion",
-    url: "https://www.linkedin.com/in/iresh13/",
+    url: "https://tin-gopher-32f.notion.site/Iresh-15e6cbd65a1780f59a96e5ac96a3ccdf",
     icon: (
       <Link2Icon className="hover:animate-bounce ease-linear hover:scale-150" />
     ),
