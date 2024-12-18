@@ -7,7 +7,7 @@ export async function Intro() {
 
   return (
     <div className="group flex flex-col gap-5">
-      <h1 className="text-slate-200 md:text-slate-300 text-3xl lg:text-4xl">
+      <h1 className="text-slate-200 md:text-slate-300 text-3xl lg:text-5xl">
         {data?.name} {"  "}
         <span className="text-3xl lg:text-6xl animate-wave inline-block">
           👋

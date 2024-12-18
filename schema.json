@@ -603,11 +603,25 @@
         },
         "optional": true
       },
+      "platform": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
       "slug": {
         "type": "objectAttribute",
         "value": {
           "type": "inline",
           "name": "slug"
+        },
+        "optional": true
+      },
+      "visible": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "boolean"
         },
         "optional": true
       },

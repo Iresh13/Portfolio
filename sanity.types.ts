@@ -116,11 +116,16 @@ export type Project = {
   _rev: string;
   projectName?: string;
   link?: string;
+  platform?: string;
   slug?: Slug;
+  visible?: boolean;
+  image_url?: string;
   description_content?: string;
-  technologies_used?: Array<{
-    _key: string;
-  } & ExperienceOption>;
+  technologies_used?: Array<
+    {
+      _key: string;
+    } & ExperienceOption
+  >;
   preview?: {
     asset?: {
       _ref: string;
@@ -231,9 +236,11 @@ export type Experience = {
   end_date?: string;
   location?: string;
   description_content?: string;
-  technologies_used?: Array<{
-    _key: string;
-  } & ExperienceOption>;
+  technologies_used?: Array<
+    {
+      _key: string;
+    } & ExperienceOption
+  >;
 };
 
 export type Slug = {
@@ -244,5 +251,23 @@ export type Slug = {
 
 export type Markdown = string;
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Education | Introduction | Project | Basic_image | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata | ExperienceOption | Experience | Slug | Markdown;
+export type AllSanitySchemaTypes =
+  | SanityImagePaletteSwatch
+  | SanityImagePalette
+  | SanityImageDimensions
+  | SanityFileAsset
+  | Geopoint
+  | Education
+  | Introduction
+  | Project
+  | Basic_image
+  | SanityImageCrop
+  | SanityImageHotspot
+  | SanityImageAsset
+  | SanityAssetSourceData
+  | SanityImageMetadata
+  | ExperienceOption
+  | Experience
+  | Slug
+  | Markdown;
 export declare const internalGroqTypeReferenceTo: unique symbol;

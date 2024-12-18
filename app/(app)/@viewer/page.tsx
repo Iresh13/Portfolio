@@ -2,6 +2,7 @@ import React from "react";
 import { AboutView } from "./component/about";
 import { EducationView } from "./component/education";
 import { ExperienceView } from "./component/experience";
+import { ProjectView } from "./component/project";
 
 const Viewer = () => {
   return (
@@ -9,6 +10,8 @@ const Viewer = () => {
       <AboutView />
 
       <ExperienceView />
+
+      <ProjectView />
 
       <EducationView />
 

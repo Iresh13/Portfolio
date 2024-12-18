@@ -25,9 +25,22 @@ export default {
           "75%": { transform: "translateX(5px) translateY(0px)" },
           "100%": { transform: "translateX(0) translateY(0)" },
         },
+        arrow: {
+          "0%": { transform: "translateX(0) translateY(0)" },
+          "25%": { transform: "translateX(5px) translateY(-5px)" },
+          "100%": { transform: "translateX(0) translateY(0)" },
+        },
+        "arrow-left": {
+          "0%": { transform: "translateX(0) translateY(0)" },
+          "25%": { transform: "translateX(-5px) translateY(0px)" },
+          "50%": { transform: "translateX(-10px) translateY(0px)" },
+          "100%": { transform: "translateX(0) translateY(0)" },
+        },
       },
       animation: {
         wave: "wave 0.5s ease-in-out 20",
+        arrow: "arrow 0.5s ease-in-out 20",
+        "arrow-left": "arrow-left 0.5s ease-in-out 20",
       },
     },
   },

@@ -18,12 +18,24 @@ export const project = defineType({
       name: "link",
     }),
     defineField({
+      type: "string",
+      description: "platform",
+      title: "platform",
+      name: "platform",
+    }),
+    defineField({
       type: "slug",
       name: "slug",
       options: {
         source: "projectName",
         maxLength: 280,
       },
+    }),
+    defineField({
+      type: "boolean",
+      name: "visible",
+      title: "visible",
+      description: "platform",
     }),
     defineField({
       type: "markdown",
