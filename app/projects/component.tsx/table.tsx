@@ -22,7 +22,7 @@ const TableView = ({ data }: { data: Project[] }) => {
       isHeaderSticky
       aria-label="Project Lists"
       classNames={{
-        base: "overflow-scroll flex flex-1 flex-grow",
+        base: "overflow-scroll flex flex-1 flex-grow no-scrollbar",
         wrapper: clsx(
           "shadow-none bg-transparent border-0 rounded-none flex flex-col flex-1"
         ),

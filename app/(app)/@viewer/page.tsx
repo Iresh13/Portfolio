@@ -6,7 +6,7 @@ import { ProjectView } from "./component/project";
 
 const Viewer = () => {
   return (
-    <div className="flex flex-col gap-28 overflow-y-auto p-6 md:p-10 lg:p-20">
+    <div className="flex flex-col gap-28 overflow-y-auto p-6 md:p-10 lg:p-20 no-scrollbar">
       <AboutView />
 
       <ExperienceView />

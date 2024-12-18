@@ -8,7 +8,7 @@ import Link from "next/link";
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <Background>
-      <div className="flex lg:h-screen overflow-scroll flex-col p-4">
+      <div className="flex lg:h-screen overflow-scroll flex-col p-4 no-scrollbar">
         <section className="p-8 flex flex-col gap-5">
           <Link href="./">
             <ArrowLeft className="hover:animate-arrow-left" />
