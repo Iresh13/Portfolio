@@ -24,8 +24,8 @@ export async function ProjectView() {
                   <div className="flex flex-row gap-8">
                     <Image
                       src={project.image_url as string}
-                      height={70}
-                      width={150}
+                      height={50}
+                      width={100}
                       className="object-contain size-fit shadow-sm rounded-sm group-hover:border-2  group-hover:border-slate-600"
                       alt={project.preview?.attribution as string}
                     />
@@ -40,7 +40,7 @@ export async function ProjectView() {
                           {project.platform}
                         </p>
 
-                        <p className="text-slate-300 text-lg lg:text-xl group-hover:text-slate-200 transition-colors line-clamp-6">
+                        <p className="text-slate-300 text-lg lg:text-xl group-hover:text-slate-200 transition-colors line-clamp-8 lg:line-clamp-6">
                           {project.description_content}
                         </p>
                       </section>
