@@ -13,6 +13,10 @@ const sourGrummy = localFont({
 export const metadata: Metadata = {
   title: "Iresh",
   description: "My Portfolio",
+  openGraph: {
+    title: "Iresh",
+    description: "Iresh Portfolio",
+  },
 };
 
 export default function RootLayout({

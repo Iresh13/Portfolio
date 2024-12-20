@@ -16,10 +16,10 @@ const Viewer = () => {
       <EducationView />
 
       <p className="text-slate-100 w-8/12">
-        Loosely designed in <b>Figma</b> and coded in <b>Cursor</b> by yours
-        truly. Built with <b>Next.js</b> and <b>Tailwind CSS</b>, <b>Sanity</b>,
-        deployed with <b>Vercel</b>. All text used are in the <b>Sour Grummy</b>{" "}
-        typeface.
+        Inspired in part by the portfolio of <b>Brittany Chiang</b> and coded in{" "}
+        <b>Cursor</b>. Built with <b>Next.js</b> and <b>Tailwind CSS</b>,{" "}
+        <b>Sanity</b>, deployed with <b>Vercel</b>. All text used are in the{" "}
+        <b>Sour Grummy</b> typeface.
       </p>
     </div>
   );
