@@ -21,16 +21,16 @@ export async function ProjectView() {
             {project.visible && (
               <GlassmorphismCard className="group">
                 <Link href={(project.link as string) || ""}>
-                  <div className="flex flex-row gap-8">
+                  <div className="flex lg:flex-row lg:gap-10 flex-col-reverse gap-5">
                     <Image
                       src={project.image_url as string}
                       height={50}
                       width={100}
-                      className="object-contain size-fit shadow-sm rounded-sm group-hover:border-2  group-hover:border-slate-600"
+                      className="object-contain size-fit shadow-sm rounded-sm group-hover:border-2  group-hover:border-slate-600 border-slate-700"
                       alt={project.preview?.attribution as string}
                     />
 
-                    <div className="flex flex-col gap-8 lg:gap-10">
+                    <div className="flex flex-col gap-5 lg:gap-10">
                       <section className="flex flex-col gap-2">
                         <p className="text-slate-200 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
                           {project.projectName}
