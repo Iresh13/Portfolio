@@ -15,7 +15,11 @@ export function useSmoothScroll() {
       const element = document.getElementById(elementId);
 
       if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "center" });
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       }
 
       setTimeout(() => {
