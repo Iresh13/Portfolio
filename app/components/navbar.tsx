@@ -30,6 +30,7 @@ export function Navbar() {
     (elementId: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       scrollToElement(elementId);
+
       setHash(`#${elementId}`);
     };
 
