@@ -9,14 +9,14 @@ export async function Intro() {
     <div className="group flex flex-col gap-5">
       <h1 className="text-slate-200 md:text-slate-300 text-3xl lg:text-5xl">
         {data?.name} {"  "}
-        <span className="text-3xl lg:text-6xl animate-wave inline-block">
+        <span className="text-2xl lg:text-3xl animate-wave inline-block">
           👋
         </span>
       </h1>
-      <h2 className="text-slate-300 text-2xl lg:text-4xl group-hover:text-slate-200 transition-colors">
+      <h2 className="text-slate-300 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
         {data?.position}
       </h2>
-      <h3 className="text-slate-400 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
+      <h3 className="text-slate-400 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
         {data?.short_description}
       </h3>
     </div>

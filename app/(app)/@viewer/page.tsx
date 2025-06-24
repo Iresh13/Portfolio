@@ -15,15 +15,15 @@ const Viewer = () => {
 
       <EducationView />
 
-      <p className="text-slate-100 w-8/12">
+      <p className="text-slate-100 w-8/12 text-sm lg:text-base">
         Coded in <b>Cursor</b>,built with <b>Next.js</b> and <b>Tailwind CSS</b>
         , <b>Sanity</b>, deployed with <b>Vercel</b>. All text used are in the{" "}
         <b>Sour Grummy</b> typeface.
         <br />
         <br />
-        <p>
+        <span className="text-xs lg:text-sm">
           Inspired in part by the portfolio of <b>Brittany Chiang</b>.
-        </p>
+        </span>
       </p>
     </div>
   );

@@ -32,15 +32,15 @@ export async function ProjectView() {
 
                     <div className="flex flex-col gap-5 lg:gap-10">
                       <section className="flex flex-col gap-2">
-                        <p className="text-slate-200 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
+                        <p className="text-slate-200 text-md lg:text-base group-hover:text-slate-200 transition-colors">
                           {project.projectName}
                         </p>
 
-                        <p className="text-slate-300 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
+                        <p className="text-slate-300 text-sm lg:text-base group-hover:text-slate-200 transition-colors">
                           {project.platform}
                         </p>
 
-                        <p className="text-slate-300 text-lg lg:text-xl group-hover:text-slate-200 transition-colors line-clamp-8 lg:line-clamp-6">
+                        <p className="text-slate-300 text-sm lg:text-base group-hover:text-slate-200 transition-colors line-clamp-8 lg:line-clamp-6">
                           {project.description_content}
                         </p>
                       </section>
@@ -70,7 +70,7 @@ export async function ProjectView() {
         href={"/projects"}
         className="group flex gap-4 items-center underline hover:animate-arrow"
       >
-        <p className="text-slate-400 text-xl lg:text-2xl group-hover:text-slate-200 transition-colors">
+        <p className="text-slate-400 text-lg lg:text-xl group-hover:text-slate-200 transition-colors">
           See All Projects
         </p>
         <ArrowRight className="group-hover:scale-125" />

@@ -24,13 +24,21 @@ export function Navbar() {
     };
   }, []);
 
-  const scrollToElement = useSmoothScroll();
+  const scrollToElement = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+        inline: "end",
+      });
+    }
+  };
 
   const handleClick =
     (elementId: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       scrollToElement(elementId);
-      setHash(`#${elementId}`);
     };
 
   return (
@@ -42,7 +50,7 @@ export function Navbar() {
             href={navLinks.link}
             onClick={handleClick(navLinks.href)}
             className={clsx(
-              "flex flex-row items-center gap-5 transition-all duration-300 ease-in-out hover:text-blue-400 hover:scale-110 group text-2xl",
+              "flex flex-row items-center gap-5 transition-all duration-300 ease-in-out hover:text-blue-400 hover:scale-110 group text-xl",
               {
                 "text-slate-200": navLinks.link !== hash,
                 "text-blue-400": navLinks.link === hash,
